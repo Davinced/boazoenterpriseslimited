@@ -4,140 +4,129 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us - Boazo Enterprises Ltd</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      color: #333;
-      margin: 0;
-      padding: 2rem;
-    }
-
-    .contact-container {
+      background: #e6f0fa;
+      padding: 40px;
       max-width: 700px;
       margin: auto;
-      background: #fff;
+    }
+    h1 {
+      text-align: center;
+      color: #005f99;
+    }
+    .contact-options {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    .contact-options h2 {
+      font-size: 18px;
+      color: #005f99;
+      margin-bottom: 10px;
+    }
+    .contact-options a {
+      display: block;
+      margin: 12px 0;
+      color: #005f99;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-options img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    form {
+      background: #ffffff;
       padding: 30px;
       border-radius: 10px;
-      border: 2px solid #800000;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-
-    h1, h2 {
-      color: #800000;
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #003d66;
     }
-
-    p.welcome {
-      font-size: 18px;
-      margin-bottom: 25px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      margin-bottom: 15px;
-      font-size: 16px;
-    }
-
-    ul li i,
-    ul li img.icon-img {
-      margin-right: 8px;
-      color: #800000;
+    .email-label img {
       vertical-align: middle;
+      width: 20px;
+      margin-right: 6px;
     }
-
-    ul li a {
-      color: #800000;
-      text-decoration: none;
-    }
-
-    ul li a:hover {
-      text-decoration: underline;
-    }
-
-    .contact-form input, .contact-form textarea {
+    input, textarea {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-top: 5px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
+      border: none;
       border-radius: 5px;
+      font-size: 16px;
+      background: #f2f8ff;
+      box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
     }
-
-    .contact-form button {
-      background-color: #800000;
-      color: #fff;
-      padding: 10px 20px;
+    input:focus, textarea:focus {
+      outline: none;
+      background: #e0f0ff;
+    }
+    button {
+      margin-top: 20px;
+      background: #0077cc;
+      color: white;
+      padding: 12px 20px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      font-size: 16px;
     }
-
-    .contact-form button:hover {
-      background-color: #a52a2a;
-    }
-
-    .icon-img {
-      vertical-align: middle;
-      width: 20px;
+    button:hover {
+      background: #005fa3;
     }
   </style>
 </head>
 <body>
 
-  <div class="contact-container">
-    <h1>Contact Us</h1>
-    <p class="welcome">
-      Welcome to Boazo Enterprises Ltd — we’re here to help! Reach out using the contact options below or send us a message directly. We look forward to hearing from you.
-    </p>
+  <h1>Contact Us</h1>
 
-    <h2>Contact us through</h2>
-    <ul>
-      <li>
-        <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Gmail Icon" />
-        <a href="mailto:boazoenterprisesltd@gmail.com" target="_blank">boazoenterprisesltd@gmail.com</a>
-      </li>
-      <li>
-        <i class="fab fa-whatsapp"></i>
-        <a href="https://wa.me/254720159348" target="_blank">WhatsApp: +254 720 159 348</a>
-      </li>
-      <li>
-        <i class="fas fa-phone-alt"></i>
-        <a href="tel:+254720159348">Call: +254 720 159 348</a>
-      </li>
-      <li>
-        <i class="fas fa-sms"></i>
-        <a href="sms:+254720159348">SMS: +254 720 159 348</a>
-      </li>
-      <li>
-        <i class="fas fa-map-marker-alt"></i>
-        P.O. Box 20406-854, Sotik, Kenya
-      </li>
-    </ul>
+  <!-- Contact Options First -->
+  <div class="contact-options">
+    <h2>Other Ways to Reach Us</h2>
 
-    <h2>Send Us a Message</h2>
-    <form class="contact-form" action="https://formsubmit.co/boazoenterprisesltd@gmail.com" method="POST">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required>
+    <a href="tel:+254720159348">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Phone_font_awesome.svg/1024px-Phone_font_awesome.svg.png" alt="Phone Icon">
+      Call Us: +254 720 159 348
+    </a>
 
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required>
+    <a href="https://wa.me/254720159348" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+      Chat with Us on WhatsApp
+    </a>
 
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <!-- Hidden fields for FormSubmit -->
-      <input type="hidden" name="_next" value="thank-you.html">
-      <input type="hidden" name="_captcha" value="false">
-
-      <button type="submit">Send Message</button>
-    </form>
+    <a href="mailto:boazoenterprisesltd@gmail.com">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Icon">
+      Email: boazoenterprisesltd@gmail.com
+    </a>
   </div>
+<p> Kindly forward your question or enquiry for quick response</p>
+  <!-- Contact Form Second -->
+  <form action="https://formspree.io/f/xdkzvrdr" method="POST">
+    <label for="name">Your Name</label>
+    <input type="text" name="name" required />
+
+    <label for="email" class="email-label">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Icon">
+      Your Email
+    </label>
+    <input type="email" name="email" required />
+
+    <label for="message">Your Message</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
 
 </body>
 </html>
