@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f2f2f2;
+      background: #f9f9f9;
       padding: 40px;
       max-width: 600px;
       margin: auto;
@@ -17,7 +17,7 @@
       color: #333;
     }
     form {
-      background: white;
+      background: #fff;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -33,6 +33,7 @@
       margin-top: 5px;
       border-radius: 5px;
       border: 1px solid #ccc;
+      font-size: 16px;
     }
     button {
       margin-top: 20px;
@@ -42,22 +43,33 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      font-size: 16px;
     }
     button:hover {
       background: #005f7f;
     }
-    .contact-icons {
-      margin-top: 30px;
-      text-align: center;
+    .contact-options {
+      margin-bottom: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-    .contact-icons a {
+    .contact-options h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #444;
+    }
+    .contact-options a {
+      display: block;
+      margin: 10px 0;
+      color: #333;
+      font-weight: bold;
       text-decoration: none;
-      margin: 10px;
-      display: inline-block;
     }
-    .contact-icons img {
-      width: 32px;
-      height: 32px;
+    .contact-options img {
+      width: 20px;
+      height: 20px;
       vertical-align: middle;
       margin-right: 8px;
     }
@@ -67,12 +79,33 @@
 
   <h1>Contact Us</h1>
 
+  <!-- Contact Options First -->
+  <div class="contact-options">
+    <h2>Other Ways to Reach Us</h2>
+
+    <a href="tel:+254720159348">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Phone_font_awesome.svg/1024px-Phone_font_awesome.svg.png" alt="Phone Icon">
+      Call Us: +254 720 159 348
+    </a>
+
+    <a href="https://wa.me/254720159348" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+      Chat with Us on WhatsApp
+    </a>
+
+    <a href="mailto:boazoenterprisesltd@gmail.com">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Icon">
+      Email: boazoenterprisesltd@gmail.com
+    </a>
+  </div>
+
+  <!-- Contact Form Second -->
   <form action="https://formspree.io/f/xdkzvrdr" method="POST">
     <label for="name">Your Name</label>
     <input type="text" name="name" required />
 
     <label for="email">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" style="width:20px; vertical-align:middle;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Icon">
       Your Email
     </label>
     <input type="email" name="email" required />
@@ -82,18 +115,6 @@
 
     <button type="submit">Send Message</button>
   </form>
-
-  <!-- Contact Links Below the Form -->
-  <div class="contact-icons">
-    <a href="https://wa.me/254720159348" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-      Chat with us on WhatsApp
-    </a><br>
-    <a href="mailto:boazoenterprisesltd@gmail.com">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" />
-      Email: boazoenterprisesltd@gmail.com
-    </a>
-  </div>
 
 </body>
 </html>
