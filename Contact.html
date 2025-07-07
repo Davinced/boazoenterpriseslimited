@@ -11,10 +11,18 @@
       padding: 40px;
       max-width: 700px;
       margin: auto;
+      color: black; /* Set all default text to black */
     }
     h1 {
       text-align: center;
       color: #005f99;
+    }
+    p.intro {
+      text-align: center;
+      color: black;
+      font-size: 18px;
+      margin-top: -10px;
+      margin-bottom: 30px;
     }
     .contact-options {
       background: #ffffff;
@@ -22,6 +30,7 @@
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       margin-bottom: 30px;
+      color: black;
     }
     .contact-options h2 {
       font-size: 18px;
@@ -31,7 +40,7 @@
     .contact-options a {
       display: block;
       margin: 12px 0;
-      color: #005f99;
+      color: black;
       text-decoration: none;
       font-weight: bold;
     }
@@ -46,19 +55,20 @@
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      color: black;
     }
     label {
       display: block;
       margin-top: 15px;
       font-weight: bold;
-      color: #003d66;
+      color: black;
     }
     .email-label img {
       vertical-align: middle;
       width: 20px;
       margin-right: 6px;
     }
-    input, textarea {
+    input {
       width: 100%;
       padding: 12px;
       margin-top: 5px;
@@ -67,6 +77,18 @@
       font-size: 16px;
       background: #f2f8ff;
       box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+      color: black;
+    }
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid black;
+      border-radius: 5px;
+      font-size: 16px;
+      background: #f2f8ff;
+      box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+      color: black;
     }
     input:focus, textarea:focus {
       outline: none;
@@ -90,8 +112,9 @@
 <body>
 
   <h1>Contact Us</h1>
+  <p class="intro">We would be delighted to hear from you. Please feel free to reach out to us using the options below, or send us a message through the contact form.</p>
 
-  <!-- Contact Options First -->
+  <!-- Contact Options -->
   <div class="contact-options">
     <h2>Other Ways to Reach Us</h2>
 
@@ -102,7 +125,7 @@
 
     <a href="https://wa.me/254720159348" target="_blank">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
-      Chat with Us on WhatsApp
+      Our WhatsApp
     </a>
 
     <a href="mailto:boazoenterprisesltd@gmail.com">
@@ -110,14 +133,13 @@
       Email: boazoenterprisesltd@gmail.com
     </a>
   </div>
-<p> We would be delighted to hear from you, Please feel free to reach out to us <br>by sending a message below </p>
-  <!-- Contact Form Second -->
+
+  <!-- Contact Form -->
   <form action="https://formspree.io/f/xdkzvrdr" method="POST">
     <label for="name">Your Name</label>
     <input type="text" name="name" required />
 
     <label for="email" class="email-label">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Icon">
       Your Email
     </label>
     <input type="email" name="email" required />
